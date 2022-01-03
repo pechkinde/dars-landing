@@ -1,150 +1,26 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "RobotoSlab";
+    src: url("res/RobotoSlab-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "RobotoSlab";
+    src: url("res/RobotoSlab-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+
+  * {
+    font-family: RobotoSlab, serif;
     margin: 0;
     padding: 0;
+    border: 0;
     outline: none;
-    border: none;
-    background-color: transparent;
-    color: #222;
-    font-family: sans-serif;
-    line-height: 1.4;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-img {
-    height: 300px;
-    object-fit: contain;
-}
-
-li {
-    margin-left: 20px;
-}
-
-.icon {
-    height: 70px;
-}
-
-video {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    margin: 30px;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px 0;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 700px;
-}
-
-p, li, label, input, textarea {
-    font-size: 18px;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-a {
-    color: #0086ff;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-image: url('res/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-
-.title {
-    color: white;
-}
-
-.cons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px;
-}
-
-.con {
-    max-width: calc(50% - 20px);
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.con__icon {
-    height: 100px;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: calc(30% - 20px);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-}
-
-input, textarea {
-    margin: 10px 0 20px 0;
-    border: 1px solid gainsboro;
-    padding: 10px 20px;
-    resize: none;
-}
-
-.button {
-    background-color: #0086ff;
-    color: white;
-    font-weight: bold;
-}
-
-@media (max-width: 720px) {
-    .con, .contact {
-        flex-direction: column;
-    }
-
-    .con__desc {
-        text-align: center;
-    }
+    text-decoration: none;
   }
-  
+}
