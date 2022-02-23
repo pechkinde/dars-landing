@@ -1,26 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: "RobotoSlab";
-    src: url("res/RobotoSlab-Regular.ttf") format("truetype");
-    font-weight: normal;
-  }
-
-  @font-face {
-    font-family: "RobotoSlab";
-    src: url("res/RobotoSlab-Bold.ttf") format("truetype");
-    font-weight: bold;
-  }
-
-  * {
-    font-family: RobotoSlab, serif;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    text-decoration: none;
-  }
-}
